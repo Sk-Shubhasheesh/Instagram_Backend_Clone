@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router()
-
+const { registerController, loginController,
+    logoutController, refetchUserController } = require("../controllers/authController")
 
 //REGISTER
 router.post("/register",registerController)
